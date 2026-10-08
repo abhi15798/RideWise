@@ -28,46 +28,46 @@ RideWise heavily utilizes key Design Patterns and SOLID principles:
 
 ---
 
-## 📂 File & Package Structure
+## Project Structure
 
 ```text
 RideWise/
 ├── docs/
-│   ├── Class_Model.md
-│   ├── Object_Relationships.md
 │   ├── Requirements.md
-│   └── SOLID_Reflection.md
+│   ├── Class_Model.md
+│   ├── SOLID_Reflection.md
+│   └── Object_Relationships.md
 ├── src/
 │   ├── main/
-│   │   ├── java/
-│   │   │   └── com/airtribe/ridewise/
-│   │   │       ├── Main.java
-│   │   │       ├── exception/
-│   │   │       │   └── NoDriverAvailableException.java
-│   │   │       ├── model/
-│   │   │       │   ├── Driver.java
-│   │   │       │   ├── FareReceipt.java
-│   │   │       │   ├── Ride.java
-│   │   │       │   ├── Rider.java
-│   │   │       │   └── RideStatus.java
-│   │   │       ├── service/
-│   │   │       │   ├── DriverService.java
-│   │   │       │   ├── RideService.java
-│   │   │       │   └── RiderService.java
-│   │   │       ├── strategy/
-│   │   │       │   ├── DefaultFareStrategy.java
-│   │   │       │   ├── FareStrategy.java
-│   │   │       │   ├── LeastActiveDriverStrategy.java
-│   │   │       │   ├── NearestDriverStrategy.java
-│   │   │       │   ├── PeakHourFareStrategy.java
-│   │   │       │   └── RideMatchingStrategy.java
-│   │   │       └── util/
-│   │   │           └── IdGenerator.java
-│   │   └── resources/
+│   │   └── java/
+│   │       └── com/airtribe/ridewise/
+│   │           ├── Main.java
+│   │           ├── exception/
+│   │           │   └── NoDriverAvailableException.java
+│   │           ├── model/
+│   │           │   ├── Driver.java
+│   │           │   ├── Rider.java
+│   │           │   ├── Ride.java
+│   │           │   ├── FareReceipt.java
+│   │           │   ├── Location.java
+│   │           │   ├── RideStatus.java
+│   │           │   └── VehicleType.java
+│   │           ├── service/
+│   │           │   ├── DriverService.java
+│   │           │   ├── RiderService.java
+│   │           │   └── RideService.java
+│   │           ├── strategy/
+│   │           │   ├── RideMatchingStrategy.java
+│   │           │   ├── NearestDriverStrategy.java
+│   │           │   ├── LeastActiveDriverStrategy.java
+│   │           │   ├── FareStrategy.java
+│   │           │   ├── DefaultFareStrategy.java
+│   │           │   └── PeakHourFareStrategy.java
+│   │           └── util/
+│   │               ├── IdGenerator.java
+│   │               └── IdPrefix.java
 │   └── test/
-│       └── java/
-├── pom.xml
-└── README.md
+└── pom.xml
 ```
 
 ---
